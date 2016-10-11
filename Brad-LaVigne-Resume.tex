@@ -1,0 +1,225 @@
+% -----------------------------------------------------------------------------
+% possible document options include:
+% font size: 10pt, 11pt, 12pt 
+% paper size: a4paper, letterpaper, a5paper, legalpaper, executivepaper, landscape
+% font family: sans, roman
+\documentclass[12pt,letterpaper,sans]{moderncv}
+% style options: casual, classic, banking, oldstyle, fancy
+\moderncvstyle{classic}
+% color options: black, blue, burgundy, green, grey, orange, purple, red
+\moderncvcolor{blue}
+% to set the default font:
+% \sfdefault for the default sans serif font, \rmdefault for the default roman
+% one, or any tex font name
+\renewcommand{\familydefault}{\sfdefault}
+% comment/uncomment to suppress automatic page numbering for CVs longer than one
+% page
+\nopagenumbers{}
+% -----------------------------------------------------------------------------
+\usepackage[utf8]{inputenc} 
+\usepackage[hscale=0.75, vscale=0.80]{geometry}
+\usepackage{amssymb}
+% -----------------------------------------------------------------------------
+% For the 'classic' style, if you want to force the width allocated to your name
+% and avoid line breaks. be careful though, the length is normally calculated to
+% avoid any overlap with your personal info; use this at your own typographical
+% risks...
+% \setlength{\makecvtitlenamewidth}{10cm} To change the width of the column with
+% the dates:
+% \setlength{\hintscolumnwidth}{2.9cm}%\renewcommand*{\hintfont}{\footnotesize}
+% \setlength{\hintscolumnwidth}{2.5cm}\renewcommand*{\hintfont}{\scriptsize}
+% \renewcommand*{\hintfont}{\small} \renewcommand*{\hintfont}{\footnotesize}
+% -----------------------------------------------------------------------------
+\newcommand{\cpp}
+    {C\nolinebreak\hspace{-0.05em}\raisebox{0.4ex}{\textbf{\scriptsize+}}\nolinebreak\hspace{-0.10em}\raisebox{0.4ex}{\textbf{\scriptsize+}}}
+\newcommand{\csharp}
+    {C\nolinebreak\hspace{-.05em}\raisebox{0.4ex}{\small\#}}
+\newcommand{\makecvtitlebox}
+    {\noindent\makebox[\textwidth][c]{\noindent\makecvtitle}\newline}
+    % \textcolor{color2}{\rule[0pt]{\textwidth}{3pt}}\newline
+% -----------------------------------------------------------------------------
+% personal data -- most are optional, remove/comment the line if not wanted
+\name{Bradley}{LaVigne}
+% \address{21 W. South Park Ave.}{Oshkosh, WI 54902}{} % street/city/country
+\phone[mobile]{385-999-1337}
+\email{blavigne13@gmail.com}
+% \homepage{www.johndoe.com}
+\social[linkedin]{linkedin.com/in/bradlavigne}
+\social[github]{github.com/blavigne13}
+% =============================================================================
+% BEGIN RESUME
+% =============================================================================
+% \title{bradley-lavigne-resume-base}
+\begin{document}
+\makecvtitle
+% -----------------------------------------------------------------------------
+% QUALIFICATION SUMMARY
+% -----------------------------------------------------------------------------
+% \section{Qualification Summary} \cvitem {}{Something relevant to the position
+% being applied for.} \cvitem {}{Something else relevant to the position being
+% applied for.}
+% -----------------------------------------------------------------------------
+% EDUCATION
+% -----------------------------------------------------------------------------
+\section{Education} 
+\cventry[8pt]
+    {June 2016} 
+    {B.S. Computer Science} 
+    {University of Wisconsin Oshkosh} 
+    {}{}
+    {\begin{itemize}
+        \item Computer Science emphasis
+        \item ABET accredited
+        \end{itemize}}
+\cventry[8pt]
+    {June 2016} {B.A. International Studies} {University of Wisconsin Oshkosh}
+    {} {} 
+    {\begin{itemize}
+        \item Global and National Security emphasis
+        \end{itemize}}
+% -----------------------------------------------------------------------------
+% SKILLS
+% -----------------------------------------------------------------------------
+\section{Skills}
+\cvitem{Languages}
+    {\begin{itemize}
+        \item Programming experience primarily in Java
+        \item Moderately experienced with C, \csharp, Javascript, Scala
+        \item Some experience with \cpp, Python, ML, MySQL, OpenGL
+        \vspace*{-\baselineskip}
+        \end{itemize}}
+\cvitem{Tools}
+    {\begin{itemize}
+        \item Eclipse, Visual Studio, Git, Ant, Maven, VMware, VirtualBox, Linux
+        \vspace*{-\baselineskip}
+        \end{itemize}}
+% \cvitem{}{Search, Database systems, 3D graphics}
+% \cvitem{Skill}{Detail} \cvitemwithcomment{item}{description}{with comment}
+% \cvdoubleitem{category}{A, B, C}{category}{X, Y, Z}
+% -----------------------------------------------------------------------------
+% OPEN SOURCE PROJECTS
+% -----------------------------------------------------------------------------
+\section{Projects and Open Source Contributions}
+\cventry[8pt]
+    {}
+    {OpenMRS} 
+    {Electronic medical records platform} 
+    {} {}
+    {\begin{itemize}
+        \item Completed a practicum project in spring 2016 focused on
+        OpenMRS---specifically targeting familiarization with methods of
+        communication, version control, frameworks, and other tools necessitated
+        by large projects and distributed teams.
+        \item Contributed bug fixes related to Hibernate ORM queries (currently
+        in code review)
+        \end{itemize}}
+\cventry[8pt]
+    {}
+    {OpenDSA} 
+    {Algorithm and data structure visualization} 
+    {} {}
+    {\begin{itemize}
+        \item Created visualizations to demonstrate dynamic programming concepts
+        using OpenDSA API to generate slide shows based upon user input
+        \item Developed prototype visualizations for lambda calculus module of
+        an online programming languages textbook as a research assistant
+        \end{itemize}}
+% -----------------------------------------------------------------------------
+% AWARDS
+% -----------------------------------------------------------------------------
+\section{Awards and Recognition}
+\cvitemwithcomment{}
+    {\listitemsymbol\textit{Cum laude} graduation honors}{GPA: 3.60/4.00}
+\cvitem{}
+    {\listitemsymbol UW Oshkosh Honors Program}
+\cvitem{}
+    {\listitemsymbol Scored in 97\textsuperscript{th} percentile of graduating
+    CS majors on ETS Major Field Test} 
+\cvitemwithcomment{}
+    {\listitemsymbol Sigma Iota Rho}{National honor society for international
+    studies}
+% -----------------------------------------------------------------------------
+% WORK HISTORY
+% -----------------------------------------------------------------------------
+\newpage
+\makecvtitle
+% \renewcommand*{\hintfont}{\footnotesize}
+\section{Work History}
+\cventry[8pt]
+    {Sep~2014--May~2016}
+    {Computer Science Tutor} 
+    {University of Wisconsin} 
+    {Oshkosh} {WI}
+    {\begin{itemize}
+        \item Provided tutoring for introductory and intermediate level Computer
+        Science courses
+        \item Courses tutored: Introduction to Computer Science and Programming,
+        Object-Oriented Design and Programming I \& II, Computer Architecture and
+        Assembly Language, Data Structures, Discrete Math
+        \end{itemize}}
+\cventry[8pt]
+    {Jan~2015--May~2015}
+    {Research Assistant} {University of Wisconsin}
+    {Oshkosh} {WI}
+    {\begin{itemize}
+        \item Developed prototype visualizations for lambda calculus module of
+        an online programming languages textbook
+        \end{itemize}}
+\cventry[8pt]
+    {Jan~2005--Nov~2010}
+    {Telecommunications Specialist} {Tekmark Global (Verizon)}
+    {Arlington} {VA} 
+    {\begin{itemize}
+        \item Performed pre-service testing of long-haul network infrastructure
+        \item Trained new hires, and produced training materials and job aids
+        \end{itemize}}
+\cventry[8pt]
+    {Nov~2001--Sep~2002}
+    {Equipment Installer} {DirecTV} 
+    {Escanaba} {MI} 
+    {\begin{itemize}
+        \item Installed satellite dishes, cable runs, and receivers per customer
+        requirements
+        \end{itemize}}
+\cventry[8pt]
+    {Jun~2001--Sep~2001}
+    {Central Office Technician} {Tek Systems (Sprint)} 
+    {Mt. Vernon} {OH}
+    {\begin{itemize}
+        \item Coordinated verification of existing circuits prior to
+        infrastructure upgrades
+        \item Prepared and delivered status reports for engineering management
+        \end{itemize}}
+\cventry[8pt]
+    {Jul~2000--Mar~2001}
+    {Telecommunications Engineer} {Global Associates (Qwest)} 
+    {Dublin} {OH}
+    {\begin{itemize}
+        \item Migrated special services circuits to comply with FCC regulations
+        \end{itemize}}
+\cventry[8pt]
+    {Jan~1999--Jul~2000}
+    {Trouble Management Specialist II} {Winstar Communications}
+    {Herndon} {VA} 
+    {\begin{itemize}
+        \item Performed troubleshooting of network outages involving voice and
+        data services
+        \item Frequently tasked with resolving highly escalated issues
+        \end{itemize}}
+% -----------------------------------------------------------------------------
+% MILITARY
+% -----------------------------------------------------------------------------
+\section{Military}
+\cventry[8pt]
+    {Aug~1995--Sep~1998}
+    {Satellite Communications Specialist} {United States Army}
+    {}{}
+    {\begin{itemize}
+        \item Operated and maintained satellite communications systems for the
+        Joint Chiefs of Staff contingency terminal
+        \item Designed and implemented enhanced maintenance procedures in order
+        to ensure mission readiness of aging equipment
+        % \item Held a SECRET security clearance (not current)
+        \item Honorably discharged
+        \end{itemize}}
+\end{document}

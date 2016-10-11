@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Mon Oct 10 16:09:08 CDT 2016
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Brad-LaVigne-Resume.tex
+outputFile=Brad-LaVigne-Resume.pdf
+langSpell=en
+markDer=true
+srcDir=
