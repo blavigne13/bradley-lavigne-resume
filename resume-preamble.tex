@@ -1,0 +1,51 @@
+% PREAMBLE
+% -------------------------------------------------------------------------------------------------
+% document options include: 
+%   font size: 10pt, 11pt, 12pt
+%   paper size: a4paper, letterpaper, a5paper, legalpaper, executivepaper, landscape
+%   font family: sans, roman
+\documentclass[12pt,letterpaper,sans]{moderncv}
+% -------------------------------------------------------------------------------------------------
+% style options:
+%   casual, classic, banking, oldstyle, fancy
+\moderncvstyle{classic}
+% -------------------------------------------------------------------------------------------------
+% color options:
+%   black, blue, burgundy, green, grey, orange, purple, red
+\moderncvcolor{blue}
+% -------------------------------------------------------------------------------------------------
+% to set the default font:
+%   \sfdefault for the default sans serif font, 
+%   \rmdefault for the default roman one,
+%   or any tex font name
+\renewcommand{\familydefault}{\sfdefault}
+% -------------------------------------------------------------------------------------------------
+% For the 'classic' style, to force the width allocated to your name and avoid line breaks
+%\setlength{\makecvtitlenamewidth}{10cm}
+% -------------------------------------------------------------------------------------------------
+% To change the width of the column with the dates:
+%\setlength{\hintscolumnwidth}{2.9cm}
+% -------------------------------------------------------------------------------------------------
+% comment/uncomment to suppress automatic page numbering
+\nopagenumbers{}
+% -------------------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc} 
+\usepackage[hscale=0.75, vscale=0.80]{geometry}
+\usepackage{amssymb}
+% -------------------------------------------------------------------------------------------------
+% personal data (remove or comment the line if not wanted)
+\name{Bradley}{LaVigne}
+%\address{21 W. South Park Ave.}{Oshkosh, WI 54902}{}
+\phone[mobile]{385-999-1337}
+\email{blavigne13@gmail.com}
+%\homepage{www.example.com}
+\social[linkedin]{linkedin.com/in/bradlavigne}
+%\social[github]{github.com/blavigne13}
+% -------------------------------------------------------------------------------------------------
+\newcommand{\cpp}
+    {C\nolinebreak\hspace{-0.05em}\raisebox{0.4ex}{\textbf{\scriptsize+}}\nolinebreak\hspace{-0.10em}\raisebox{0.4ex}{\textbf{\scriptsize+}}}
+\newcommand{\csharp}
+    {C\nolinebreak\hspace{-.05em}\raisebox{0.4ex}{\small\#}}
+\newcommand{\makecvtitlebox}
+    {\noindent\makebox[\textwidth][c]{\noindent\makecvtitle}\newline}
+% -------------------------------------------------------------------------------------------------
