@@ -29,23 +29,27 @@
 % comment/uncomment to suppress automatic page numbering
 \nopagenumbers{}
 % -------------------------------------------------------------------------------------------------
-\usepackage[utf8]{inputenc} 
-\usepackage[hscale=0.75, vscale=0.80]{geometry}
-\usepackage{amssymb}
-% -------------------------------------------------------------------------------------------------
-% personal data (remove or comment the line if not wanted)
 \name{Bradley}{LaVigne}
 %\address{21 W. South Park Ave.}{Oshkosh, WI 54902}{}
 \phone[mobile]{385-999-1337}
 \email{blavigne13@gmail.com}
 %\homepage{www.example.com}
 \social[linkedin]{linkedin.com/in/bradlavigne}
-%\social[github]{github.com/blavigne13}
+\social[github]{github.com/blavigne13}
+% -------------------------------------------------------------------------------------------------
+%\moderncvhead[\moderncvstyleheadoptions]{2}
+%\moderncvbody{1}
+%\moderncvfoot{1}
+% -------------------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+%\usepackage[top=0.75in, bottom=1.00in, left=1.00in, right=1.00in]{geometry} 
+%\usepackage[voffset=-0.25in, hscale=0.77, vscale=0.82]{geometry}
+\usepackage[voffset=-0.25in, margin=1.0in]{geometry}
+\usepackage{amssymb}
 % -------------------------------------------------------------------------------------------------
 \newcommand{\cpp}
     {C\nolinebreak\hspace{-0.05em}\raisebox{0.4ex}{\textbf{\scriptsize+}}\nolinebreak\hspace{-0.10em}\raisebox{0.4ex}{\textbf{\scriptsize+}}}
 \newcommand{\csharp}
     {C\nolinebreak\hspace{-.05em}\raisebox{0.4ex}{\small\#}}
-\newcommand{\makecvtitlebox}
+\newcommand{\makecvtitlebox}[1][0pt]
     {\noindent\makebox[\textwidth][c]{\noindent\makecvtitle}\newline}
-% -------------------------------------------------------------------------------------------------
